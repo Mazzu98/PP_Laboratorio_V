@@ -10,10 +10,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user"
             android:textSize="20sp"/>
@@ -22,24 +22,40 @@
             android:id="@+id/eNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
             android:hint="@string/user"
             />
 
-        <TextView
-            android:layout_width="match_parent"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/password"
             android:textSize="20sp"/>
 
-        <EditText
-            android:id="@+id/eContrasenia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
+    <EditText
+        android:id="@+id/eContrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="84dp"
+        android:inputType="textPassword"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/password_repeat"
             android:textSize="20sp"/>
@@ -48,10 +64,11 @@
             android:id="@+id/eContrasenia2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:inputType="textPassword"
             />
-    </LinearLayout>
 
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -90,7 +107,6 @@
         android:layout_height="wrap_content"
         android:text="Guardar"
         android:layout_gravity="center_horizontal"
-        android:drawableLeft="@android:drawable/ic_menu_edit"
         android:layout_marginTop="50dp"/>
 
 </LinearLayout>
